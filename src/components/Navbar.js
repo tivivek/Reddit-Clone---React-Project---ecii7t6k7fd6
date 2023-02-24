@@ -2,6 +2,9 @@ import React from 'react'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useNavigate } from 'react-router-dom';
+import "../stylesheets/logo.css"
+import logo from "./logo.png"
+
 
 const Navbar = (props) => {
   const navigate=useNavigate()
@@ -27,7 +30,7 @@ const Navbar = (props) => {
   return (
     <>
     <div className='nav'>
-        <span id='reddit-logo'>Reddit</span>
+        <span id='reddit-logo' > <img src={logo} alt="Logo" /></span>
         <span id='login'>
           {isLoggedIn() && <button onClick={addPost}>Add post</button>}
           {!isLoggedIn() && <button onClick={login}>Login</button>}

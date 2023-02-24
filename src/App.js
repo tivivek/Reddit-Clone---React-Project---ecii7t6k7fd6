@@ -22,7 +22,6 @@ function App() {
         <Route path='/addpost' element={<AddPostPopup trigger={addpostPopup} setPostTrigger={setAddPostPopup}></AddPostPopup>}/>
       </Routes>
     
-    
     </div>
     </>
   );
